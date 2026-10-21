@@ -1,0 +1,36 @@
+name: Scrape Website Assets
+
+on:
+  workflow_dispatch: # Allows manual trigger from the GitHub Actions tab
+  # schedule:
+  #   - cron: '0 0 * * 0' # Optional: Run weekly on Sunday midnight
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Mirror website and download assets
+        run: |
+          mkdir -p downloaded_site
+          cd downloaded_site
+
+          wget \
+            --mirror \
+            --convert-links \
+            --adjust-extension \
+            --page-requisites \
+            --no-parent \
+            --wait=1 \
+            --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
+            https://freeze.pharmasante.com.tr/ || true
+
+      - name: Upload assets as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-assets
+          path: downloaded_site/
+          retention-days: 7
