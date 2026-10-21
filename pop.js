@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-palette="boba" data-fx="full">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Boba</title>
+<link rel="icon" href="./img/boba-cup.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://image.tmdb.org" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&display=swap">
+<link rel="stylesheet" href="./css/app.css?v=f3f3c1ac6e">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gr-home" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2fe0b0"./><stop offset="1" stop-color="#1a7cc9"./></linearGradient>
+    <linearGradient id="gr-play" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffbe2e"./><stop offset="1" stop-color="#ff4f2b"./></linearGradient>
+    <linearGradient id="gr-watch" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff5a7e"./><stop offset="1" stop-color="#b1124b"./></linearGradient>
+    <linearGradient id="gr-listen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e064ff"./><stop offset="1" stop-color="#6e3cff"./></linearGradient>
+    <linearGradient id="gr-ask" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff7ac0"./><stop offset=".55" stop-color="#9b6bff"./><stop offset="1" stop-color="#4f6bff"./></linearGradient>
+    <linearGradient id="gr-settings" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#aab3c0"./><stop offset="1" stop-color="#58616f"./></linearGradient>
+    <clipPath id="cup-in" clipPathUnits="userSpaceOnUse"><path d="M22 106 H198 L179.5 278 Q178.5 286 170 286 H50 Q41.5 286 40.5 278 Z"./></clipPath>
+    <clipPath id="cup-top" clipPathUnits="userSpaceOnUse"><rect x="0" y="-20" width="220" height="64"./></clipPath>
+    <linearGradient id="cup-glass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#dff0ff" stop-opacity=".55"./><stop offset=".5" stop-color="#ffffff" stop-opacity=".18"./><stop offset="1" stop-color="#d6e8fb" stop-opacity=".5"./></linearGradient>
+    <linearGradient id="cup-tea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6EC"./><stop offset="1" stop-color="#EED6BD"./></linearGradient>
+    <linearGradient id="cup-lid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".78"./><stop offset="1" stop-color="#e3eef9" stop-opacity=".42"./></linearGradient>
+    <linearGradient id="cup-rim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"./><stop offset="1" stop-color="#dfe8f2"./></linearGradient>
+    <radialGradient id="cup-shadow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#1e5078" stop-opacity=".28"./><stop offset="1" stop-color="#1e5078" stop-opacity="0"./></radialGradient>
+    <linearGradient id="cup-straw" gradientUnits="userSpaceOnUse" x1="138.6" y1="4.46" x2="161.4" y2="7.54"><stop offset="0" stop-color="#0f8f78"./><stop offset=".16" stop-color="#2fe0b0"./><stop offset=".34" stop-color="#9df7e3"./><stop offset=".42" stop-color="#ffffff"./><stop offset=".5" stop-color="#7fe6d6"./><stop offset=".74" stop-color="#2399c9"./><stop offset="1" stop-color="#11518f"./></linearGradient>
+    <radialGradient id="cup-p0" cx=".38" cy=".34" r=".72"><stop offset="0" stop-color="#2fe0b0"./><stop offset="1" stop-color="#1a7cc9"./></radialGradient>
+    <radialGradient id="cup-p1" cx=".38" cy=".34" r=".72"><stop offset="0" stop-color="#43c2ff"./><stop offset="1" stop-color="#3058f0"./></radialGradient>
+    <radialGradient id="cup-p2" cx=".38" cy=".34" r=".72"><stop offset="0" stop-color="#ff5a7e"./><stop offset="1" stop-color="#b1124b"./></radialGradient>
+    <radialGradient id="cup-p3" cx=".38" cy=".34" r=".72"><stop offset="0" stop-color="#e064ff"./><stop offset="1" stop-color="#6e3cff"./></radialGradient>
+    <radialGradient id="cup-p4" cx=".38" cy=".34" r=".72"><stop offset="0" stop-color="#ffbe2e"./><stop offset="1" stop-color="#ff4f2b"./></radialGradient>
+    <radialGradient id="cup-p5" cx=".38" cy=".34" r=".72"><stop offset="0" stop-color="#2be0e6"./><stop offset="1" stop-color="#0b8f86"./></radialGradient>
+    <radialGradient id="cup-p6" cx=".38" cy=".34" r=".72"><stop offset="0" stop-color="#5ee08a"./><stop offset="1" stop-color="#139b48"./></radialGradient>
+    <radialGradient id="cup-p7" cx=".38" cy=".34" r=".72"><stop offset="0" stop-color="#ff7ac0"./><stop offset="1" stop-color="#4f6bff"./></radialGradient>
+  </defs>
+</svg>
+
+<div class="atmo" aria-hidden="true">
+  <div class="amb"></div>
+  <div class="wash" id="washA"></div>
+  <div class="wash" id="washB"></div>
+  <div class="veil"></div>
+  <div class="grain"></div>
+</div>
+
+<div class="intro" id="intro"><div class="cup"><svg viewBox="0 0 220 300" aria-hidden="true"><ellipse cx="110" cy="294" rx="78" ry="7" fill="url(#cup-shadow)"./><path d="M18 104 H202 L182 280 Q181 290 171 290 H49 Q39 290 38 280 Z" fill="url(#cup-glass)"./><path d="M138.6 4.46 L161.4 7.54 L125.4 273.54 L102.6 270.46 Z" fill="url(#cup-straw)" opacity=".92"./><g clip-path="url(#cup-in)"><g class="cup-t"><rect x="0" y="150" width="220" height="160" fill="url(#cup-tea)" opacity=".86"./><ellipse cx="110" cy="150" rx="86" ry="6" fill="#FFFBF5"./><path d="M40 150.5 Q110 158 182 150.5" fill="none" stroke="#fff" stroke-width="1.6" opacity=".9"./></g><g class="cup-p"><circle cx="60" cy="272" r="12.5" fill="url(#cup-p0)"./><circle cx="55.8" cy="267.4" r="3.6" fill="#fff" opacity=".75"./></g><g class="cup-p"><circle cx="87" cy="274.5" r="12.5" fill="url(#cup-p1)"./><circle cx="82.8" cy="269.9" r="3.6" fill="#fff" opacity=".75"./></g><g class="cup-p"><circle cx="114" cy="275.5" r="12.5" fill="url(#cup-p2)"./><circle cx="109.8" cy="270.9" r="3.6" fill="#fff" opacity=".75"./></g><g class="cup-p"><circle cx="141" cy="274.5" r="12.5" fill="url(#cup-p3)"./><circle cx="136.8" cy="269.9" r="3.6" fill="#fff" opacity=".75"./></g><g class="cup-p"><circle cx="166.5" cy="271" r="12.5" fill="url(#cup-p4)"./><circle cx="162.3" cy="266.4" r="3.6" fill="#fff" opacity=".75"./></g><g class="cup-p"><circle cx="74" cy="249" r="12.5" fill="url(#cup-p5)"./><circle cx="69.8" cy="244.4" r="3.6" fill="#fff" opacity=".75"./></g><g class="cup-p"><circle cx="101" cy="250.5" r="12.5" fill="url(#cup-p6)"./><circle cx="96.8" cy="245.9" r="3.6" fill="#fff" opacity=".75"./></g><g class="cup-p"><circle cx="128" cy="249" r="12.5" fill="url(#cup-p7)"./><circle cx="123.8" cy="244.4" r="3.6" fill="#fff" opacity=".75"./></g></g><path d="M30 116 L48 276" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".7"./><path d="M43 118 L57 262" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity=".45"./><path d="M189 118 L181 190" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".5"./><ellipse cx="110" cy="284" rx="66" ry="4.5" fill="#fff" opacity=".5"./><path d="M22 106 H198 L179.5 278 Q178.5 286 170 286 H50 Q41.5 286 40.5 278 Z" fill="none" stroke="#fff" stroke-width="2.2" opacity=".85"./><path d="M18 104 H202 L182 280 Q181 290 171 290 H49 Q39 290 38 280 Z" fill="none" stroke="#37557a" stroke-opacity=".5" stroke-width="1.6" stroke-linejoin="round"./><path d="M24 92 C24 57 64 41 110 41 C156 41 196 57 196 92 Z" fill="url(#cup-lid)" stroke="#37557a" stroke-opacity=".42" stroke-width="1.5"./><path d="M40 82 C44 62 70 50 100 48" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" opacity=".95"./><rect x="12" y="88" width="196" height="17" rx="8.5" fill="url(#cup-rim)" stroke="#37557a" stroke-opacity=".35" stroke-width="1.2"./><path d="M22 91.5 H198" stroke="#fff" stroke-width="2" stroke-linecap="round"./><ellipse cx="145.99" cy="43.5" rx="15.5" ry="4.6" fill="#cfe1f0" stroke="#fff" stroke-width="1.6" transform="rotate(7.71 145.99 43.5)"./><path d="M138.6 4.46 L161.4 7.54 L125.4 273.54 L102.6 270.46 Z" fill="url(#cup-straw)" clip-path="url(#cup-top)"./><ellipse cx="150" cy="6" rx="11.5" ry="3.8" fill="#0c5d6b" stroke="#b9fff0" stroke-width="1.3" transform="rotate(7.71 150 6)"./></svg></div></div>
+
+<main class="views" id="views"></main>
+<nav class="dock" id="dock" aria-label="Sections"></nav>
+<div class="mini gl" id="mini" hidden></div>
+
+<div class="scrim" id="scrim"></div>
+<div class="sheet gl g3" id="sheet" role="dialog" aria-modal="true"></div>
+<div class="over" id="over"></div>
+
+<script type="importmap">{"imports":{"./js/account.js":"./js/account.js?v=9bd934c9b4","./js/ads.js":"./js/ads.js?v=408d58c317","./js/api.js":"./js/api.js?v=184c48abae","./js/app.js":"./js/app.js?v=99b65a49ab","./js/attach.js":"./js/attach.js?v=c7a84174ce","./js/data.js":"./js/data.js?v=85abaa02d5","./js/engine.js":"./js/engine.js?v=a83e9155df","./js/film.js":"./js/film.js?v=fa56efc31c","./js/icons.js":"./js/icons.js?v=d73511e0a4","./js/md.js":"./js/md.js?v=6c4094b752","./js/pop.js":"./js/pop.js?v=1781d71440","./js/ui.js":"./js/ui.js?v=f983bb71f9","./js/views.js":"./js/views.js?v=a9c0f9164e"}}</script><script type="module" src="./js/app.js?v=99b65a49ab"></script>
+</body>
+</html>
