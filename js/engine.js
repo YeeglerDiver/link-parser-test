@@ -29,6 +29,7 @@ function opens(url, ms) {
 }
 
 const ALL = [...LINES, (location.protocol === "https:" ? "wss://" : "ws://") + location.host + "./e/"];
+const LOCAL = ALL.length - 1;
 const bad = new Set();
 let conn = null;
 let cur = -1;
@@ -70,10 +71,11 @@ function raceOpen(idxs, ms) {
 }
 
 async function pickLine() {
+  if (!bad.has(LOCAL) && (await opens(ALL[LOCAL], 6000))) return LOCAL;
   const r = remembered();
-  if (r >= 0 && !bad.has(r) && (await opens(ALL[r], 3000))) return r;
-  const win = await raceOpen(ALL.map((_, i) => i).filter((i) => i !== r && !bad.has(i)), 3000);
-  return win >= 0 ? win : ALL.length - 1;
+  if (r >= 0 && r !== LOCAL && !bad.has(r) && (await opens(ALL[r], 3000))) return r;
+  const win = await raceOpen(ALL.map((_, i) => i).filter((i) => i !== LOCAL && !bad.has(i)), 3000);
+  return win >= 0 ? win : LOCAL;
 }
 
 export async function recover() {

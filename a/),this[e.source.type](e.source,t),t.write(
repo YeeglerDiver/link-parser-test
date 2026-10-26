@@ -57,6 +57,6 @@
 <div class="sheet gl g3" id="sheet" role="dialog" aria-modal="true"></div>
 <div class="over" id="over"></div>
 
-<script type="importmap">{"imports":{"/js/account.js":"/js/account.js?v=9bd934c9b4","/js/ads.js":"/js/ads.js?v=408d58c317","/js/api.js":"/js/api.js?v=184c48abae","/js/app.js":"/js/app.js?v=99b65a49ab","/js/attach.js":"/js/attach.js?v=c7a84174ce","/js/data.js":"/js/data.js?v=85abaa02d5","/js/engine.js":"/js/engine.js?v=a83e9155df","/js/film.js":"/js/film.js?v=fa56efc31c","/js/icons.js":"/js/icons.js?v=d73511e0a4","/js/md.js":"/js/md.js?v=6c4094b752","/js/pop.js":"/js/pop.js?v=1781d71440","/js/ui.js":"/js/ui.js?v=f983bb71f9","/js/views.js":"/js/views.js?v=a9c0f9164e"}}</script><script type="module" src="/js/app.js?v=99b65a49ab"></script>
+<script type="importmap">{"imports":{"/js/account.js":"/js/account.js?v=9bd934c9b4","/js/ads.js":"/js/ads.js?v=408d58c317","/js/api.js":"/js/api.js?v=184c48abae","/js/app.js":"/js/app.js?v=99b65a49ab","/js/attach.js":"/js/attach.js?v=c7a84174ce","/js/data.js":"/js/data.js?v=85abaa02d5","/js/engine.js":"/js/engine.js?v=d93ab7946a","/js/film.js":"/js/film.js?v=fa56efc31c","/js/icons.js":"/js/icons.js?v=d73511e0a4","/js/md.js":"/js/md.js?v=6c4094b752","/js/pop.js":"/js/pop.js?v=1781d71440","/js/ui.js":"/js/ui.js?v=f983bb71f9","/js/views.js":"/js/views.js?v=a9c0f9164e"}}</script><script type="module" src="/js/app.js?v=99b65a49ab"></script>
 </body>
 </html>
